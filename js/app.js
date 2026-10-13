@@ -447,6 +447,7 @@
         <div class="header__actions">
           <button class="hact hact--search" type="button" id="btnSearchToggle" aria-label="Tìm kiếm">${I.search}</button>
           <a class="hact hact--hotline" href="tel:${SITE.hotlineTel}">${I.phoneCall}<span><b>${SITE.hotline}</b><small>Tư vấn miễn phí</small></span></a>
+          <a class="hact hact--suckhoe" href="index.html#sucKhoe" title="Theo dõi sức khỏe con" aria-label="Theo dõi sức khỏe con"><span class="hact__emoji" aria-hidden="true">📏</span><span class="lbl">Sức khỏe con</span></a>
           <a class="hact hact--account" href="account.html">${I.user}<span class="lbl">Tài khoản</span></a>
           <button class="hact" type="button" data-open-cart aria-label="Giỏ hàng">${I.cart}<span class="lbl">Giỏ hàng</span><span class="hact__count ${cartCount ? '' : 'hide'}" data-cart-count>${cartCount}</span></button>
         </div>
@@ -470,6 +471,7 @@
         <details class="mmenu__group"><summary>Danh mục sản phẩm ${I.chevron}</summary><ul>${CATEGORIES.map((c) => `<li><a href="collections.html?cat=${c.key}">${c.icon} ${c.label}</a></li>`).join('')}</ul></details>
         <a class="mmenu__link" href="gioi-thieu.html">💗 Giới thiệu Hương Chất Kids</a>
         ${NAV.map(navMobile).join('')}
+        <a class="mmenu__link" href="index.html#sucKhoe">📏 Theo dõi sức khỏe con</a>
         <a class="mmenu__link" href="account.html">👤 Tài khoản / Đơn hàng</a>
         <a class="mmenu__link" href="policy.html">📋 Hỗ trợ & chính sách</a>
       </div>
@@ -1756,7 +1758,7 @@
     },
   };
 
-  window.MC = { $, $$, fmt, pct, listPrice, param, esc, byId, brandOf, ageLabel, ageRange, productThumb, shortName, addrShow, hoursNote, MULTI_RATE, shopeeSale, shopeeBtn, vietqrPayload, payBox, payQrSvg, openPayQR, transferInfo, stripVN, store, phoneOk, I, starRow, productImage, productCard, Cart, Customer, Wish, submitOrder, shipFee, applyCoupon, deliveryEstimate, toast, openQuickBuy, openCallback, openCart, renderDrawer, countdown, orderSuccessHTML, syncStock, applyStock, rankDefault, isForMom, autoScrollRow,
+  window.MC = { $, $$, fmt, pct, listPrice, param, esc, byId, brandOf, ageLabel, ageRange, productThumb, shortName, addrShow, hoursNote, MULTI_RATE, shopeeSale, shopeeBtn, vietqrPayload, payBox, payQrSvg, openPayQR, transferInfo, stripVN, store, phoneOk, I, starRow, productImage, productCard, Cart, Customer, Wish, submitOrder, shipFee, applyCoupon, deliveryEstimate, toast, openModal, closeModal, openQuickBuy, openCallback, openCart, renderDrawer, countdown, orderSuccessHTML, syncStock, applyStock, rankDefault, isForMom, autoScrollRow,
     tierOf, tierByKey, tierNext, tierDiscount, tierBadge, tiers, phoneKey, maHetHan, ketHop, maChoQua, ViMa, GT, taoMaDon, anEmail, AFF, voucherTicket, maCongKhai, maTotNhat, chipMaDaLuu, daMuaTruoc, vcIcon, maskPhone, addrParse, addrStore, addrFull, loyaltyApi, Session, saveSession, refreshProfile, couponsFor, openOtp,
     giftFor, giftNote, giftBox, laNuocLotte, laVip, hangCho, traHang, HangSdt, openLogin, openDoiMk, moiDoiMk, tinhTuDiaChi, ghnQuote, ghnInfo, shipText, shipFrom };
 })();
